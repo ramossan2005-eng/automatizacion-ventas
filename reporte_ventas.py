@@ -204,6 +204,9 @@ def agregar_grafica(ws, titulo):
     grafica.y_axis.title = "Ventas (COP)"
     grafica.y_axis.numFmt = '"$"#,##0'
     grafica.legend = None
+    grafica.x_axis.delete = False
+    grafica.y_axis.delete = False
+
     grafica.height, grafica.width = 8, 16
 
     datos = Reference(ws, min_col=3, min_row=1, max_row=ws.max_row)
