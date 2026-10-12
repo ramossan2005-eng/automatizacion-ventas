@@ -201,7 +201,7 @@ def dar_formato(salida):
 def agregar_grafica(ws, titulo):
     grafica = BarChart()
     grafica.title = titulo
-    grafica.y_axis.title = "Ventas (COP)"
+    grafica.title.overlay = False
     grafica.y_axis.numFmt = '"$"#,##0'
     grafica.legend = None
     grafica.x_axis.delete = False
